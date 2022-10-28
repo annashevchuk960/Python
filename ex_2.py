@@ -1,0 +1,5 @@
+Wage = int(input("Wage-"))
+Payment = int(input("Payment-"))
+Arrears = int(input("Arrears-"))
+Remainder = (Wage - Payment - Arrears  )
+print (Remainder)
