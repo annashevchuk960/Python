@@ -10,3 +10,5 @@ if action == '+':
     print(f'{x} + {y} + {z} = {x + y + z }')
 elif action == '*':
     print(f'{x} * {y} * {z} = {x * y * z}')
+else:
+    print('Command not found!')
