@@ -15,3 +15,5 @@ elif action == '*':
     print(f'{x} * {y} = {x * y}')
 elif action == 'avg':
     print(f'Avg = {(x+y)/2}')
+else:
+    print('Command not found!')
