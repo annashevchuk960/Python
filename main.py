@@ -1,5 +1,8 @@
-x = int(input("x-"))
-if x % 7 == 0:
-    print (f"{x} Number is multiple 7")
-else:
-    print (f"{x} Number is not multiple 7 ")
+number1 = int(input("number1="))
+number2 = int(input("number2="))
+if number1 < number2:
+    print(number2)
+if number1 > number2:
+    print(number1)
+if number1 == number2:
+    print(number1)
