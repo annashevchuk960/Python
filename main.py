@@ -24,9 +24,9 @@ try:
         print (userseconds)
     else:
         h = int(diff_seconds/3600)
-        m = int((diff_seconds % 3600) / 60)
-        s = int((diff_seconds % 3600) % 60)
-        print(f'{h}:{m}:{s} to midnight!')
+        d = int((diff_seconds % 3600) / 60)
+        k = int((diff_seconds % 3600) % 60)
+        print(f'{h}:{d}:{k} to midnight!')
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
