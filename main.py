@@ -26,9 +26,8 @@ try:
         h = (size / speed / 60 / 60 )
         print(h)
     else:
-        print('Command not found!')
-except ValueError as vl_ex:
-    print(f'Value error: {vl_ex}')
-except Exception as ex:
-    print(f'Error: {ex}')
-    print(f'Name: {ex.__class__.__name__}')
+
+        h = int(/3600)
+        d = int(( % 3600) / 60)
+        k = int(( % 3600) % 60)
+        print(f'{h}:{d}:{k} to midnight!')
