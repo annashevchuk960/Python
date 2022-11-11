@@ -1,17 +1,23 @@
 try:
-    number = int(input("number="))
-    if number < 0:
-        raise Exception('time can not be < 0 ')
-    if 24 < number:
-        raise Exception('Time can not be more than 24')
-    if 0 <= number < 6:
-        print("Good Night")
-    elif 6 <= number < 13:
-        print("Good Morning")
-    elif 13 <= number < 17:
-        print("Good Day")
-    elif 17 <= number < 24:
-        print("Good Evening")
+    day = int(input("Day="))
+    if day <= 0:
+        raise Exception('day can not be <= 0 ')
+    if 7 < day:
+        raise Exception('day can not be more than 7')
+    if  day == 1:
+        print("Понеділок")
+    elif day == 2:
+        print("Вівторок")
+    elif day == 3:
+        print("Середа")
+    elif day == 4:
+        print("Четвер")
+    elif day == 5:
+        print("П'ятниця")
+    elif day == 6:
+        print("Субота")
+    elif day == 7:
+        print("Неділя")
     else:
         print('Command not found!')
 except ValueError as vl_ex:
