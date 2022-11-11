@@ -19,7 +19,7 @@ try:
         d = (price  * (discount / 100))
         print(d)
     elif action == 'second':
-        s = ()
+        s = (size / speed)
         print(s)
     else:
         print('Command not found!')
