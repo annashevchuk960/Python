@@ -5,10 +5,10 @@ try:
     speed = float(input('speed->'))
     if 0 >= speed :
         raise Exception('speed can not be <= 0  ')
-    size2 = (size / 125)
-    gigabyte = (speed / 1000000000)
-    print(gigabyte )
+    size2 = (size * 1024 * 8)
     print(size2)
+    size3 = ( speed/ 1000000000)
+    print(size3)
     print('#>-----------<MENU>------------<#')
     print('|  Show hour for {size} |')
     print('|  Show minute for {size}|')
@@ -17,13 +17,13 @@ try:
     print('#>------------------------------<#')
     action = input('action->')
     if action == 'second':
-        s = (size / gigabyte  * 1.1)
+        s = (size / speed )
         print(s)
     elif action == 'minute':
-        m = (size / gigabyte / 60  * 1.1)
+        m = (size / speed/ 60 )
         print(m)
     elif action == 'hour':
-        h = (size / gigabyte / 60 / 60  * 1.1)
+        h = (size / speed / 60 / 60 )
         print(h)
     else:
         print('Command not found!')
