@@ -1,28 +1,26 @@
 try:
-    price = float(input('price->'))
-    if 0 >= price :
-        raise Exception('price can not be < 0 ')
-    gmc = float(input('the number of game consoles->'))
-    if 0 >= gmc :
-        raise Exception('the number of game consoles can not be < 0 ')
-    discount = float(input('discount->'))
-    if 0 > discount :
-        raise Exception('discount can not be < 0 ')
-    print('#>-----------<Menu>-----------<#')
-    print(f'| t - total amount              |')
-    print(f'| d - game console at a discount |')
-    print(f'| k - total amount at a discount |')
-    print('#>----------------------------<#')
+    size = float(input('size->'))
+    if 0 >= size :
+        raise Exception('size can not be <= 0 ')
+    speed = float(input('speed->'))
+    if 0 >= speed :
+        raise Exception('speed can not be <= 0  ')
+    print('#>-----------<MENU>------------<#')
+    print('|  Show hour for {size} |')
+    print('|  Show minute for {size}|')
+    print('|  Show second for {size}|')
+    print('|  other key - full time        |')
+    print('#>------------------------------<#')
     action = input('action->')
-    if action == 't':
+    if action == 'hour':
         t = (price * gmc)
         print(t)
-    elif action == 'd':
+    elif action == 'minute':
         d = (price  * (discount / 100))
         print(d)
-    elif action == 'k':
-        k = (price  * (discount / 100) * gmc )
-        print(k)
+    elif action == 'second':
+        s = ()
+        print(s)
     else:
         print('Command not found!')
 except ValueError as vl_ex:
