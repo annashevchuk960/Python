@@ -5,10 +5,6 @@ try:
     speed = float(input('speed->'))
     if 0 >= speed :
         raise Exception('speed can not be <= 0  ')
-    size2 = (size * 1024 * 8)
-    print(size2)
-    size3 = ( speed/ 1000000000)
-    print(size3)
     print('#>-----------<MENU>------------<#')
     print('|  Show hour for {size} |')
     print('|  Show minute for {size}|')
@@ -17,17 +13,19 @@ try:
     print('#>------------------------------<#')
     action = input('action->')
     if action == 'second':
-        s = (size / speed )
+        s = (size2 / speed )
         print(s)
     elif action == 'minute':
-        m = (size / speed/ 60 )
+        m = (size2 / speed/ 60 )
         print(m)
     elif action == 'hour':
-        h = (size / speed / 60 / 60 )
+        h = (size2 / speed / 60 / 60 )
         print(h)
     else:
-
-        h = int(/3600)
-        d = int(( % 3600) / 60)
-        k = int(( % 3600) % 60)
+        s = (size2 / speed)
+        h = int(s/3600)
+        d = int((s % 3600) / 60)
+        k = int((s % 3600) % 60)
         print(f'{h}:{d}:{k} to midnight!')
+except ValueError as vl_ex:
+    print(f'Value error: {vl_ex}')
