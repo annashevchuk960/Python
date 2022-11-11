@@ -8,3 +8,4 @@ elif 13 <= number < 17:
 elif 17 <= number < 0 :
     print("Good Evening")
 else
+    print('Command not found!')
