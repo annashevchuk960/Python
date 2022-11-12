@@ -23,6 +23,7 @@ try:
     elif action == 'second':
         print (userseconds)
     else:
+        diff_seconds = 86400 - userseconds
         h = int(diff_seconds/3600)
         d = int((diff_seconds % 3600) / 60)
         k = int((diff_seconds % 3600) % 60)
