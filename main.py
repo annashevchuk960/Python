@@ -1,8 +1,9 @@
 try:
-    number = int(input("number="))
-    if  number == 0:
-        print("Number is equal to zero")
-    elif number > 0:
+    number1 = int(input("number 1="))
+    number2 = int(input("number 2="))
+    if  number1 == number2:
+        print("Number is equal")
+    elif number1 > 0:
         print("Number is positive")
     elif number < 0:
         print("Number is negative")
