@@ -3,10 +3,10 @@ try:
     number2 = int(input("number 2="))
     if  number1 == number2:
         print("Number is equal")
-    elif number1 > 0:
-        print("Number is positive")
-    elif number < 0:
-        print("Number is negative")
+    elif number1 > number2:
+        print(number2 , number1)
+    elif number1 < number2:
+        print(number1 , number2)
     else:
         print('Command not found!')
 except ValueError as vl_ex:
