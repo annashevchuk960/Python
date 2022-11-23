@@ -16,7 +16,7 @@ try:
     print('#>---------<#')
     action = input('action->')
     if action == 'Kievstar':
-        kievstar = float(input('kievstar->'))
+        kievstar = float(input('Kievstar->'))
         kiev = ((((kievstar * 100)/60) * time)/100)
         print(kiev)
     elif action == 'Life':
