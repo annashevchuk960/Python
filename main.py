@@ -25,7 +25,7 @@ try:
         print(lif)
     elif action == 'MTS':
         MTS = float(input('MTS->'))
-        mts = ((((mts * 100) / 60) * time) / 100)
+        mts = ((((MTS * 100) / 60) * time) / 100)
         print(mts)
     else:
         print(f'Comand not found')
