@@ -3,20 +3,17 @@ try:
     end = int(input('end->'))
     counter = 0
     for item in range(begin, end + 1):
-            print(item, end="\t")
-    print()
-    for item in range(end, begin - 1, -1):
-        print( item, end="\t")
-    print()
+        if item % 3 == 0 and item != 5:
+            print ("«Fizz»")
     for item in range(begin, end + 1):
-        if item % 7 == 0:
-            print(item, end="\t")
-    print()
+        if item % 5 == 0 and item != 3:
+            print("«Buzz»")
     for item in range(begin, end + 1):
-        count = 0
-        if item % 5 == 0:
-            counter += 1
-    print (counter)
+        if item % 5 == 0 and item % 3 == 0:
+            print("Fizz Buzz")
+    for item in range(begin, end + 1):
+        if item % 5 != 0 and item != 3:
+            print(item , end="\t")
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
