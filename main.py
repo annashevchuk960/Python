@@ -1,9 +1,8 @@
 try:
-    number = int(input('number->'))
-    factorial = 1
-    for item in range(1,number + 1):
-        factorial *= item
-        print(f'{number}! = {factorial}')
+    length = int(input('length->'))
+    sign = ("*")
+    for item in range(1,length + 1):
+     print (sign,end="\t")
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
