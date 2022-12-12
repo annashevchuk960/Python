@@ -1,26 +1,13 @@
 try:
-    number = 0
+    start =  int(input('start->'))
+    end =  int(input('end->'))
     sum = 0
-    min = 0
-    max = 0
-    trigger = True
-    while True:
-        number = int(input('number->'))
-        if number == 7:
-            break
-        else:
-            sum += number
-            if trigger:
-                min = max = number
-                trigger = False
-            else:
-                if max < number:
-                    max = number
-                if min > number:
-                    min = number
-    print (f'Sum = {sum}')
-    print (f'Min = {min}')
-    print (f'Max = {max}')
+    avg = 0
+    for item in range(start ,end + 1):
+        sum += item
+        avg = (sum / 2)
+    print(sum)
+    print(avg)
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
