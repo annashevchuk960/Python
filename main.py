@@ -1,26 +1,15 @@
 try:
-    number = 0
-    sum = 0
-    min = 0
-    max = 0
-    trigger = True
-    while True:
-        number = int(input('number->'))
-        if number == 7:
-            break
-        else:
-            sum += number
-            if trigger:
-                min = max = number
-                trigger = False
-            else:
-                if max < number:
-                    max = number
-                if min > number:
-                    min = number
-    print (f'Sum = {sum}')
-    print (f'Min = {min}')
-    print (f'Max = {max}')
+    begin = int(input('begin->'))
+    end = int(input('end->'))
+    for item in range(end + 1 , begin):
+            print(item, end="\t")
+    print()
+    for item in range(end , begin + 1):
+        if item % 2 != 0 :
+            print(item , end="\t")
+    for item in range(begin ,end + 1):
+        if item % 2 != 0 :
+            print(item , end="\t")
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
