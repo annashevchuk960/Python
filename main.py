@@ -1,15 +1,8 @@
 try:
-    begin = int(input('begin->'))
-    end = int(input('end->'))
-    for item in range(end + 1 , begin):
-            print(item, end="\t")
-    print()
-    for item in range(end , begin + 1):
-        if item % 2 != 0 :
-            print(item , end="\t")
-    for item in range(begin ,end + 1):
-        if item % 2 != 0 :
-            print(item , end="\t")
+    number = int(input('number->'))
+    number1 = int(input('number1->'))
+    answer = (number ** number1)
+    print(answer)
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
