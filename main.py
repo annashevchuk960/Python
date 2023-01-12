@@ -1,3 +1,6 @@
 string = input("Рядок ")
-print(len([i for i in string if i.isdigit()]))
-print(len([i for i in string if i.isalpha()]))
+origenstring = input("Cлово")
+newstring = input("На яке замінити")
+newstring = string.replace(origenstring, newstring)
+print (newstring)
+
