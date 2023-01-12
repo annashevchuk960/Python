@@ -1,10 +1,7 @@
 string = input("Рядок ")
-letcount = 0
-numcount = 0
-for symbol in string:
-    if symbol.isalpha():
-        letcount += 1
-    if symbol.isdigit():
-        numcount += 1
-print('Літери', letcount )
-print('Цифри', numcount)
+symbol = input("Символ ")
+counter = 0
+for s in string:
+    if symbol == s :
+        counter += 1
+print (counter)
