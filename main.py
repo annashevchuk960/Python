@@ -1,10 +1,14 @@
 try:
     start = int(input("START="))
     finish = int(input("FINISH="))
-    for item in range(start , finish):
-        for j in range(2, item):
-            if item % j == 0 and item != 0:
-                print(item )
+    for item in range(start , finish + 1):
+        counter = 0
+        for j in range(1, item + 1):
+            if item % j == 0 :
+                counter += 1
+        if counter == 2 :
+            print (item )
+    print ()
 except ValueError as vl_ex:
     print(f'Value error: {vl_ex}')
 except Exception as ex:
