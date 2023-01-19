@@ -1,6 +1,6 @@
-string = input("Рядок ")
-origenstring = input("Cлово")
-newstring = input("На яке замінити")
-newstring = string.replace(origenstring, newstring)
-print (newstring)
+string = input("Слово ")
+if string == string[::-1] :
+    print('Є паліндромом')
+if string != string[::-1] :
+    print('Не є паліндромом')
 
