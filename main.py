@@ -1,6 +1,6 @@
-string = input("Слово ")
-if string == string[::-1] :
-    print('Є паліндромом')
-if string != string[::-1] :
-    print('Не є паліндромом')
-
+text = input("Текст ")
+word = input("Слова ").split(',')
+for word in text.split():
+ if word.lower() in word:
+   text = text.replace(word, word.upper())
+print(text)
